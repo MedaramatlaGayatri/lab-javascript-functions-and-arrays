@@ -19,7 +19,7 @@ describe('Find the greatest number', () => {
 
   it('should return greater of two arguments - if the first argument greater', () => {
     expect(greatestOfTwoNumbers(2, 1)).toBe(2);
-    expect(greatestOfTwoNumbers(5, -7)).toBe(5);
+    expect(greatestOfTwoNumbers(2, -7)).toBe(5);
   });
 
   it('should return greater of two arguments - if the second argument greater', () => {
@@ -160,9 +160,9 @@ describe('Calculate the average of an array of strings', () => {
   });
 
   // do we need this?
-  // it("should return the average of a one-element array", () => {
-  //   expect(averageWordLength(["ironhack"])).toBe(8);
-  // });
+  it("should return the average of a one-element array", () => {
+     expect(averageWordLength(["ironhack"])).toBe(8);
+   });
 
   it('should return the average of a the array', () => {
     expect(
@@ -210,16 +210,16 @@ describe('Unique array', () => {
   });
 
   // do we need this?
-  // it("should return the correct uniqified array when an array of the same elements passed as argument", () => {
-  //   expect(uniquifyArray(["Ironhack", "Ironhack", "Ironhack"])).toEqual([
-  //     "Ironhack"
-  //   ]);
-  // });
+   it("should return the correct uniqified array when an array of the same elements passed as argument", () => {
+     expect(uniquifyArray(["Ironhack", "Ironhack", "Ironhack"])).toEqual([
+       "Ironhack"
+     ]);
+   });
 
   // do we need this?
-  // it("should return the same array when no element is repeated", () => {
-  //   expect(uniquifyArray(["Cat", "Dog", "Cow"])).toEqual(["Cat", "Dog", "Cow"]);
-  // });
+   it("should return the same array when no element is repeated", () => {
+     expect(uniquifyArray(["Cat", "Dog", "Cow"])).toEqual(["Cat", "Dog", "Cow"]);
+   });
 
   it('should return the uniquified array', () => {
     expect(
@@ -251,19 +251,19 @@ describe('Find elements', () => {
   });
 
   // do we need this test?
-  // it("should return true if the word we are looking for is the only one in the array", () => {
-  //   expect(doesWordExist(["machine"], "machine")).toBe(true);
-  // });
+   it("should return true if the word we are looking for is the only one in the array", () => {
+     expect(doesWordExist(["machine"], "machine")).toBe(true);
+   });
 
   // do we need this test?
-  // it("should return false if the word we are looking for is not in the array", () => {
-  //   expect(
-  //     doesWordExist(
-  //       ["machine", "poison", "eat", "apple", "horse"],
-  //       "ratatouille"
-  //     )
-  //   ).toBe(false);
-  // });
+   it("should return false if the word we are looking for is not in the array", () => {
+     expect(
+       doesWordExist(
+         ["machine", "poison", "eat", "apple", "horse"],
+         "ratatouille"
+       )
+     ).toBe(false);
+   });
 
   it('should return true if the word we are looking for is in the array', () => {
     expect(searchElement(['door','window','ceiling','roof','plinth','tiles', 'ceiling','flooring'], 'tiles')).toBe(
